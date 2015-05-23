@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Calculadora</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="numero1"></string>
+    <string name="numero2"></string>
+    <string name="btnSomar"></string>
+    <string name="btnSubtrair"></string>
+    <string name="btnMultiplicar"></string>
+    <string name="btnDividir"></string>
+    <string name="btnLimpar"></string>
+    <string name="resultado"></string>
+</resources>
