@@ -1,0 +1,414 @@
+@charset "UTF-8";
+
+body{
+
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-top: 0px;
+    background: url("../_imagens/fundo_play.jpg")
+}
+
+input{
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.08);
+    border-color: #ffcf6e;
+}
+
+a{
+    text-decoration: none;
+    transition: 1s;
+}
+
+a:hover{
+    color: rgba(255, 162, 20, 0.96);
+    text-decoration: underline;
+}
+
+div#paginaHome{
+    background-color: #ffffff;
+    border: none;
+    margin: auto;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.5);
+    width: 80%;
+    height: 590px;
+}
+
+header#cabecalho{
+    height: 150px;
+    border-bottom: solid rgba(255, 162, 20, 0.96);
+    margin: auto;
+}
+
+img#imagem-logo{
+    height: 150px;
+    position: relative;
+    float: left;
+}
+
+table#tabela-login{
+	position: absolute;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+	color: #000000;
+    padding: 0px;
+    top: 1%;
+    margin-left: 41%;
+
+}
+
+table#tabela-login a{
+    text-decoration: none;
+}
+
+
+td#celula-statusLogin{
+    color: red;
+}
+
+td#mensagem-novo-usuario{
+    color: #15ce41;
+}
+
+table#tabela-login input{
+	max-width: 100px;
+}
+
+input#botao-login{
+    background: url("../_imagens/botao_login.png") no-repeat 0px ;
+    width: 55px;
+    height: 25px;
+    border: none;
+    box-shadow: 0px 0px 15px rgba(244, 120, 25, 0.83);
+    border: solid rgba(244, 120, 25, 0.83);
+}
+
+input#botao-login:hover{
+    border: solid rgba(244, 120, 25, 0.83);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+img#botao-novo{
+    box-shadow: 0px 0px 15px rgba(244, 120, 25, 0.83);
+    border: solid rgba(244, 120, 25, 0.83);
+    width: 50px;
+    border-radius: 5px;
+}
+
+img#botao-novo:hover{
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
+}
+
+
+
+img#botao-login{
+    width: 60px;
+    height: 25px;
+    border: none;
+    opacity: 0;
+}
+
+
+table#tabela-usuarioLogado{
+     position: absolute;
+     padding: 5px;
+     top: 2%;
+     right: 17%;
+
+ }
+
+tr.linha-tabela-usuarioLogado{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: #000000;
+    background-color: rgba(0, 0, 0, 0.08);
+    text-align: right;
+}
+
+table#tabela-usuarioLogado td{
+    border-radius: 5px;
+}
+
+table#tabela-usuarioLogado label{
+     padding: 10px;
+ }
+
+table#tabela-usuarioLogado a{
+    padding: 10px;
+}
+
+
+
+/* Configuração do Menu*/
+nav#menu{
+    display: block;
+    position: absolute;
+    font-family: 'Montserrat', sans-serif;
+    color: rgba(118, 42, 137, 0.74);
+    padding: 0px;
+    top: 107px;
+    left: 44%;
+
+}
+
+nav#menu ul{
+    list-style: none;
+}
+
+nav#menu li{
+    display: inline-block;
+    padding-right: 20px;
+    padding-left: 20px;
+    font-weight: bold;
+    font-size: 1.3em;
+    transition: 1s;
+    text-decoration: none;
+}
+
+nav#menu li:hover{
+    color: rgba(244, 141, 26, 0.74);
+    text-decoration: underline;
+}
+
+/*Configuração da sessao*/
+section#sessao{
+    background-color: transparent;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65%;
+    height: 430px;
+    float: left;
+}
+
+p#escritura{
+    font-family: 'Lora', serif;
+    width: 650px;
+    text-align: center;
+    font-size: 16pt;
+    padding-top: 6%;
+    padding-left: 3%;
+    padding: 0%;
+    margin: 0%;
+    margin-top: 10%;
+}
+
+p#escritura-referencia{
+    font-family: 'Lora', serif;
+    width: 620px;
+    text-align: right;
+    font-size: 12pt;
+    padding-top: 6%;
+    padding-left: 3%;
+    padding: 0%;
+    margin: 0%;
+}
+
+
+img#imagem-home{
+    margin-top: 9%;
+    margin-left: 1%;
+    float: left;
+}
+
+p.texto-sobre{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    text-align: justify;
+    padding-left: 5%;
+    text-indent: 35px;
+    color: #a71117;
+}
+
+/*Configurando Aside*/
+
+aside#lateral{
+    background-color: transparent;
+    float: right;
+    width: 35%;
+}
+
+img#escrituras{
+    margin-left: 110px;
+    transition: 1s; 
+}
+
+img#imagem-obras-padrao{
+    margin-top: 25%;
+    margin-left: 10%;
+}
+
+/*Configuração da sessão Cadastro de novo usuario*/
+
+fieldset#dados-jogador{
+    border: none;
+    font-size: 1.2em;
+    margin-top: 20px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+}
+
+fieldset#dados-jogador legend{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2em;
+    color: #000000;
+    font-weight: bold;
+}
+
+label.label-alerta{
+    color: red;
+    font-size: 10pt;
+}
+
+/*Configuração do cabeçalho usuario logado*/
+
+table#tabela-jogar{
+    position: absolute;
+    width: 300px;
+    left: 530px;
+    top: 20px;
+    text-align: center;
+    padding: 0px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1em;
+    color: #15ce41;
+}
+
+table#tabela-jogar a{
+    text-decoration: none;
+}
+
+input#botao-jogar{
+    width: 80px;
+    height: 30px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    color: #ffffff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px rgba(0, 0, 0, .5);
+    text-align: center;
+    background-color: #ffaa4e ;
+    border-style: inherit;
+    transition: .5s;
+}
+
+label#fonte-perguntas{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    margin-left: 2%;
+    margin-top: 2%;
+    font-weight: bold;
+    position: absolute;
+
+}
+
+label#informacao-ranking{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    margin-left: 23.5%;
+    font-weight: bold;
+    margin-top: 2%;
+    position: absolute;
+
+}
+
+/*Página Ranking.html*/
+table#tabela-pontuacao{
+     width: 450px;
+     margin-left: 260px;
+     margin-top: 35px;
+     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 7px;
+}
+
+
+
+th.escritura-escolhida{
+    background-color: rgba(244, 141, 26, 0.83);
+    font-family: 'Montserrat', sans-serif;
+    height: 30px;
+    border-radius: 5px;
+}
+
+th.tabela-subtitulo{
+    background-color: rgba(0, 0, 0, 0.36);
+    font-family: 'Montserrat', sans-serif;
+    height: 25px;
+    border-radius: 5px;
+}
+
+table#tabela-pontuacao td{
+    font-family: 'Montserrat', sans-serif;
+    background-color:rgba(0, 0, 0, 0.11);
+    height: 25px;
+    border-radius: 5px;
+}
+
+table#tabela-pontuacao tr{
+    opacity: 1;
+}
+
+tr.linha-tabela:hover{
+    opacity: .8;
+    color: #feca4f;
+}
+
+td.coluna1{
+    text-align: center;
+
+}
+
+td.coluna2{
+    text-align: center;
+    width: 120px;
+}
+
+label#escritura-escolhida{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12pt;
+    margin-left: 31%;
+    margin-top: 1%;
+    position: absolute;
+    text-align: justify;
+}
+
+img#botao-voltar{
+    margin-left: 48%;
+    margin-top: 10%;
+    border: solid rgba(244, 120, 25, 0.83);
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(244, 120, 25, 0.83);
+}
+
+img#botao-voltar:hover{
+    border: solid rgba(244, 120, 25, 0.83);
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.5);
+
+}
+
+table#tabela-midia-social{
+    border: none;
+    float: right;
+    position: absolute;
+    left: 95%;
+    top: 65%;
+}
+
+table#tabela-midia-social img{
+     box-shadow: 0px 0px .5px rgba(0, 0, 0, .2);
+     border-radius: 3px;
+ }
+
+table#tabela-midia-social img:hover{
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, .3);
+}
+
+footer#rodape{
+     background-color: transparent;
+     margin-top: 10px;
+ }
+
+footer#rodape label{
+    margin-left: 45%;
+    font-family: "Droid Sans";
+    font-size: 12pt;
+    color: rgba(89, 30, 28, 0.81);
+}

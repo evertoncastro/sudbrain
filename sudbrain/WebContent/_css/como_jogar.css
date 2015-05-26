@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+iframe#iframe-como-jogar{
+    overflow: hidden;
+    border: none;
+    width: 100%;
+    height: 100%;
+    margin-top: 0%;
+}
+
+iframe#iframe-como-jogar::-webkit-scrollbar{
+    display: none;
+}
+
+nav#menu-links{
+     text-decoration: none;
+     font-family: 'Montserrat', sans-serif;
+     width: 300px;
+}
+
+nav#menu-links ul{
+    list-style: none;
+    color: rgba(118, 42, 137, 0.74);
+}
+
+nav#menu-links li{
+    background-color: rgba(246, 212, 154, 0.98);
+    padding: 3px;
+    padding-left: 10px;
+    border: solid 2px #ffffff;
+    border-radius: 5px;
+}
+
+nav#menu-links li:hover{
+    background-color: rgba(0, 0, 0, 0.34);
+    color: rgba(118, 42, 137, 0.74);
+    padding: 3px;
+    padding-left: 10px;
+    border: solid 2px #ffffff;
+}
+
+a.links-como-jogar{
+    color: #000000;
+}
