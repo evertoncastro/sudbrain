@@ -80,8 +80,7 @@ public class ServletProximaQuestao extends HttpServlet {
 			sessao.setAttribute("sorteio", sorteio);
 			
 			String servletChamada = new String();
-			//servletChamada = "servletProximaQuestao.do?nivel="+Math.addExact(perguntaSorteada.getNivel(), 1);
-			servletChamada = "servletProximaQuestao.do?nivel="+soma(perguntaSorteada.getNivel(), 1);
+			servletChamada = "servletProximaQuestao.do?nivel="+Math.addExact(perguntaSorteada.getNivel(), 1);
 			request.setAttribute("servletChamada", servletChamada);
 			
 			Acao acao = (Acao) sessao.getAttribute("acao");
@@ -102,10 +101,5 @@ public class ServletProximaQuestao extends HttpServlet {
 		else if(escritura.equals("velho")) retorno=3;
 		else if(escritura.equals("novo")) retorno=4;
 		return retorno;
-	}
-	
-	public Integer soma(Integer a, Integer b){
-		return a + b;
-	}
-
+	}	
 }

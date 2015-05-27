@@ -53,8 +53,7 @@ public class ServletAjuda extends HttpServlet {
 			sessao.setAttribute("ajuda", ajuda);
 			
 			String servletChamada = new String();
-			//servletChamada = "servletProximaQuestao.do?nivel="+Math.addExact(perguntaAtual.getNivel(), 1);
-			servletChamada = "servletProximaQuestao.do?nivel="+soma(perguntaAtual.getNivel(), 1);
+			servletChamada = "servletProximaQuestao.do?nivel="+Math.addExact(perguntaAtual.getNivel(), 1);
 			request.setAttribute("servletChamada", servletChamada);
 			
 			String puloChamado = new String();
@@ -71,9 +70,4 @@ public class ServletAjuda extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 	}
-	
-	public Integer soma(Integer a, Integer b){
-		return a + b;
-	}
-
 }
