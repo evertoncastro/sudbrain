@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,7 +11,6 @@ import javax.servlet.http.HttpServletResponse;
 import br.com.project.sudbrain.model.dao.DataUsuarioDAO;
 import br.com.project.sudbrain.model.vo.Usuario;
 
-@WebServlet("/servletInsereUsuario.do")
 public class ServletInsereUsuario extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -46,10 +44,10 @@ public class ServletInsereUsuario extends HttpServlet {
 			
 			
 			if(statusInsercao==true){
-				mensagem = "Usuário cadastrado com sucesso";
+				mensagem = "Usuï¿½rio cadastrado com sucesso";
 				
 			}else{
-				mensagem = "Erro ao cadastrar usuário";
+				mensagem = "Erro ao cadastrar usuï¿½rio";
 			}
 			request.setAttribute("mensagem", mensagem);
 			RequestDispatcher proximaTela = request.getRequestDispatcher("/index.jsp");

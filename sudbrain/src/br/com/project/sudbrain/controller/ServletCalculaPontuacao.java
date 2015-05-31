@@ -4,7 +4,6 @@ import java.io.IOException;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -18,7 +17,6 @@ import br.com.project.sudbrain.model.vo.Pergunta;
 import br.com.project.sudbrain.model.vo.Usuario;
 
 
-@WebServlet("/servletCalculaPontuacao.do")
 public class ServletCalculaPontuacao extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -59,7 +57,7 @@ public class ServletCalculaPontuacao extends HttpServlet {
 			jogada.setId_escritura(verificaEscritura(escrituraUtilizada));
 			
 		}catch(Exception e){
-			System.out.println("Problema na conversão da string escritura para Integer");
+			System.out.println("Problema na conversï¿½o da string escritura para Integer");
 		}
 		
 		DataJogadaDAO dataJogadaDAO = new DataJogadaDAO();		
@@ -71,7 +69,7 @@ public class ServletCalculaPontuacao extends HttpServlet {
 		String mensagemPontos = null;
 		
 		mensagem = "Jogo encerrado";
-		mensagemPontos = "Pontuação realizada: "+pontuacaoRealizada;
+		mensagemPontos = "Pontuaï¿½ï¿½o realizada: "+pontuacaoRealizada;
 		
 		request.setAttribute("mensagem", mensagem);
 		request.setAttribute("mensagemPontos", mensagemPontos);

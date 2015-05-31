@@ -1,11 +1,9 @@
 package br.com.project.sudbrain.controller;
 
 import java.io.IOException;
-import java.util.Random;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -17,11 +15,9 @@ import br.com.project.sudbrain.model.help.UtilizaAjuda;
 import br.com.project.sudbrain.model.vo.Acao;
 import br.com.project.sudbrain.model.vo.Pergunta;
 
-@WebServlet("/servletAjuda.do")
 public class ServletAjuda extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     
-	//Variaveis globias utilizadas para a definicao dos valores das ajudas
 	
     public ServletAjuda() {
         super();

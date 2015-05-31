@@ -1,10 +1,8 @@
 package br.com.project.sudbrain.controller;
 
 import java.io.IOException;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -12,7 +10,6 @@ import javax.servlet.http.HttpServletResponse;
 import br.com.project.sudbrain.model.dao.DataPerguntaDAO;
 import br.com.project.sudbrain.model.vo.Pergunta;
 
-@WebServlet("/servletCadastraPergunta.do")
 public class ServletCadastraPergunta extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     
@@ -50,7 +47,7 @@ public class ServletCadastraPergunta extends HttpServlet {
 		if(status){
 			mensagem = "Pergunta cadastrada com sucesso";
 		}else{
-			mensagem = "Pergunta não cadastrada";
+			mensagem = "Pergunta nï¿½o cadastrada";
 		}
 		
 		request.setAttribute("mensagem", mensagem);		

@@ -2,17 +2,117 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
   <display-name>sudbrain</display-name>
   
-  <!-- Servlets -->
+  <!-- Filter -->
+  <filter>
+     <filter-name>Filtro</filter-name>
+     <filter-class>br.com.project.sudbrain.controller.Filtro</filter-class>
+  </filter>
+  <filter-mapping>
+     <filter-name>Filtro</filter-name>
+     <url-pattern>/*</url-pattern>
+  </filter-mapping>
+  
+  <!-- ServletLogin -->
   <servlet>
     <servlet-name>servletLogin</servlet-name>
     <servlet-class>br.com.project.sudbrain.controller.ServletLogin</servlet-class>
-  </servlet>
-  
+  </servlet>  
   <servlet-mapping>
     <servlet-name>servletLogin</servlet-name>
     <url-pattern>/servletLogin.do</url-pattern>
   </servlet-mapping>
   
+   <!-- ServletCadastroPergunta -->
+  <servlet>
+    <servlet-name>servletCadastraPergunta</servlet-name>
+    <servlet-class>br.com.project.sudbrain.controller.ServletCadastraPergunta</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+    <servlet-name>servletCadastraPergunta</servlet-name>
+    <url-pattern>/servletCadastraPergunta.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- ServletAjuda -->
+  <servlet>
+    <servlet-name>servletAjuda</servlet-name>
+    <servlet-class>br.com.project.sudbrain.controller.ServletAjuda</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+    <servlet-name>servletAjuda</servlet-name>
+    <url-pattern>/servletAjuda.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- ServletCalculaPontuacao -->
+  <servlet>
+    <servlet-name>servletCalculaPontuacao</servlet-name>
+    <servlet-class>br.com.project.sudbrain.controller.ServletCalculaPontuacao</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+    <servlet-name>servletCalculaPontuacao</servlet-name>
+    <url-pattern>/servletCalculaPontuacao.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- ServletIniciarJogo -->
+  <servlet>
+    <servlet-name>servletIniciarJogo</servlet-name>
+    <servlet-class>br.com.project.sudbrain.controller.ServletIniciarJogo</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+    <servlet-name>servletIniciarJogo</servlet-name>
+    <url-pattern>/servletIniciarJogo.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- ServletLimpaDados -->
+  <servlet>
+    <servlet-name>servletLimpaDados</servlet-name>
+    <servlet-class>br.com.project.sudbrain.controller.ServletLimpaDados</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+    <servlet-name>servletLimpaDados</servlet-name>
+    <url-pattern>/servletLimpaDados.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- ServletMostraRanking -->
+  <servlet>
+    <servlet-name>servletMostraRanking</servlet-name>
+    <servlet-class>br.com.project.sudbrain.controller.ServletMostraRanking</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+    <servlet-name>servletMostraRanking</servlet-name>
+    <url-pattern>/servletMostraRanking.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- ServletProximaQuestao -->
+  <servlet>
+    <servlet-name>servletProximaQuestao</servlet-name>
+    <servlet-class>br.com.project.sudbrain.controller.ServletProximaQuestao</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+    <servlet-name>servletProximaQuestao</servlet-name>
+    <url-pattern>/servletProximaQuestao.do</url-pattern>
+  </servlet-mapping>
+  
+   <!-- ServletPularQuestao -->
+  <servlet>
+    <servlet-name>servletPularQuestao</servlet-name>
+    <servlet-class>br.com.project.sudbrain.controller.ServletPularQuestao</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+    <servlet-name>servletPularQuestao</servlet-name>
+    <url-pattern>/servletPularQuestao.do</url-pattern>
+  </servlet-mapping>
+  
+  <!-- ServletSorteio -->
+  <servlet>
+    <servlet-name>servletSorteio</servlet-name>
+    <servlet-class>br.com.project.sudbrain.controller.servletSorteio</servlet-class>
+  </servlet>  
+  <servlet-mapping>
+    <servlet-name>servletSorteio</servlet-name>
+    <url-pattern>/servletSorteio.do</url-pattern>
+  </servlet-mapping>
+  
+    
   <welcome-file-list>
     <welcome-file>index.jsp</welcome-file>
   </welcome-file-list>

@@ -6,18 +6,13 @@ import java.util.List;
 
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
-import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 
 import br.com.project.sudbrain.model.dao.DataPontuacaoDAO;
-import br.com.project.sudbrain.model.dao.DataUsuarioDAO;
 import br.com.project.sudbrain.model.vo.Pontuacao;
-import br.com.project.sudbrain.model.vo.Usuario;
 
-@WebServlet("/servletMostraRanking.do")
 public class ServletMostraRanking extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     public String escrituraEscolhida = null;
@@ -45,9 +40,9 @@ public class ServletMostraRanking extends HttpServlet {
 	public int verificaEscritura(String escritura){
 		int retorno = 0;
 		if(escritura.equals("mormon")){
-			this.escrituraEscolhida="Livro de Mórmon"; retorno=1;
+			this.escrituraEscolhida="Livro de Mï¿½rmon"; retorno=1;
 		}else if(escritura.equals("doutrina")){
-			this.escrituraEscolhida="Doutrina e Convênios"; retorno=2;
+			this.escrituraEscolhida="Doutrina e Convï¿½nios"; retorno=2;
 		}else if(escritura.equals("velho")){
 			this.escrituraEscolhida="Velho Testamento"; retorno=3;
 		}else if(escritura.equals("novo")){
