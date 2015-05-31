@@ -105,7 +105,7 @@
   <!-- ServletSorteio -->
   <servlet>
     <servlet-name>servletSorteio</servlet-name>
-    <servlet-class>br.com.project.sudbrain.controller.servletSorteio</servlet-class>
+    <servlet-class>br.com.project.sudbrain.controller.ServletSorteio</servlet-class>
   </servlet>  
   <servlet-mapping>
     <servlet-name>servletSorteio</servlet-name>

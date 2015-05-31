@@ -30,8 +30,8 @@
 
     <table id="tabela-usuarioLogado">
     <tr>
-    <td><label class="labLogin">${usuario.getNome()}</label></td>
-    <td><a href="../sudbrain/servletLogin.do?acao=sair">  Sair</a></td>
+    <td><label class="labLogin">${usuario.nome}</label></td>
+    <td><a href="../servletLogin.do?acao=sair">  Sair</a></td>
     </tr>
     </table>
 

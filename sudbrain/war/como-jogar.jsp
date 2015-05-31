@@ -33,7 +33,7 @@
     <table id="tabela-usuarioLogado" hidden="hidden">
     <tr class="linha-tabela-usuarioLogado">
     <td><a href="../sudbrain/jogar.jsp">Jogar </a></td>
-    <td><label class="labLogin">${usuarioNome}</label></td>
+    <td><label class="labLogin">${usuario.nome}</label></td>
     <td><a href="../sudbrain/servletLogin.do?acao=sair">  Sair</a></td>
     </tr>
     </table>

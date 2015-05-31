@@ -3,7 +3,6 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
     <!DOCTYPE html>
     <html lang="pt-br">
-
     <head>
     <meta charset="utf-8">
     <title>Sudbrain</title>
@@ -32,7 +31,7 @@
     <table id="tabela-usuarioLogado" hidden="hidden">
     <tr class="linha-tabela-usuarioLogado">
     <td><a href="../sudbrain/jogar.jsp">Jogar </a></td>
-    <td><label class="labLogin">${usuario.getNome()}</label></td>
+    <td><label class="labLogin">${usuario.nome}</label></td>
     <td><a href="../sudbrain/servletLogin.do?acao=sair">  Sair</a></td>
     </tr>
 
