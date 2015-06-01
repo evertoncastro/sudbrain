@@ -1,9 +1,14 @@
 package br.com.project.sudbrain.model.help;
 
+import java.io.Serializable;
 import java.util.Random;
 
-public class Sorteio {
+public class Sorteio implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int sorteio = 0;
 	private int imagemSorteio = 0;
 	private boolean alternativa1 = true;

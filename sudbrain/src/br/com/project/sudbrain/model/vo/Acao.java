@@ -1,7 +1,13 @@
 package br.com.project.sudbrain.model.vo;
 
-public class Acao {
+import java.io.Serializable;
+
+public class Acao implements Serializable{
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int qtdPulo;
 	private int qtdAjuda;
 	private int qtdSorteio;

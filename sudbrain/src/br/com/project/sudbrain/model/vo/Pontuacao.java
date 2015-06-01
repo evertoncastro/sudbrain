@@ -1,6 +1,12 @@
 package br.com.project.sudbrain.model.vo;
 
-public class Pontuacao {
+import java.io.Serializable;
+
+public class Pontuacao implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private String nome;
 	private int pontos;
 	

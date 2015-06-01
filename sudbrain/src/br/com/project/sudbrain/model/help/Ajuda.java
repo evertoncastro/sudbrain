@@ -1,7 +1,13 @@
 package br.com.project.sudbrain.model.help;
 
-public class Ajuda {
+import java.io.Serializable;
+
+public class Ajuda implements Serializable {
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int ajuda1;
 	private int ajuda2;
 	private int ajuda3;

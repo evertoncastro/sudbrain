@@ -18,39 +18,39 @@
     <div id="paginaHome">
     <header id="cabecalho">
     <label id="label-f5">Pressione F5 ou Atualizar para reiniciar</label>
-    <label id="label-usuario">${usuario.getNome()}</label>
+    <label id="label-usuario">${usuario.nome}</label>
     <a href="servletLimpaDados.do"> SAIR</a>
     </header>
 
     <section id="sessao">
 
-    <fieldset id="fieldQuest"><legend>Pergunta <c:out value="${pergunta.getNivel()}"></c:out></legend>
-    <h1>${pergunta.getPergunta()}</h1>
+    <fieldset id="fieldQuest"><legend>Pergunta <c:out value="${pergunta.nivel}"></c:out></legend>
+    <h1>${pergunta.pergunta}</h1>
     </fieldset>
 
     <table id="tabela-alternativas">
     <tr>
     <td class="button"><label class="label-alternativa" for="radio1">1</label><input class="radioButton" id="radio1" type="radio" name="alter" value="1" onclick="ativaBotaoEnvia();"></td>
-    <td><label id="label-alternativa1" class="texto-resposta" for="radio1" onmouseover="desativaAvisoSelecao();">${pergunta.getAlternativa_A()}</label></td>
+    <td><label id="label-alternativa1" class="texto-resposta" for="radio1" onmouseover="desativaAvisoSelecao();">${pergunta.alternativa_A}</label></td>
     </tr>
     <tr>
     <td class="button"><label class="label-alternativa" for="radio2">2</label><input class="radioButton" id="radio2" type="radio" name="alter" value="2" onclick="ativaBotaoEnvia();"></td>
-    <td><label id="label-alternativa2" class="texto-resposta" for="radio2" onmouseover="desativaAvisoSelecao();">${pergunta.getAlternativa_B()  }</label></td>
+    <td><label id="label-alternativa2" class="texto-resposta" for="radio2" onmouseover="desativaAvisoSelecao();">${pergunta.alternativa_B}</label></td>
     </tr>
     <tr>
     <td class="button"><label class="label-alternativa" for="radio3">3</label><input class="radioButton" id="radio3" type="radio" name="alter" value="3" onclick="ativaBotaoEnvia();"></td>
-    <td><label id="label-alternativa3" class="texto-resposta" for="radio3" onmouseover="desativaAvisoSelecao();">${pergunta.getAlternativa_C()}</label></td>
+    <td><label id="label-alternativa3" class="texto-resposta" for="radio3" onmouseover="desativaAvisoSelecao();">${pergunta.alternativa_C}</label></td>
     </tr>
     <tr>
     <td class="button"><label class="label-alternativa" for="radio4">4</label><input class="radioButton" id="radio4" type="radio" name="alter" value="4" onclick="ativaBotaoEnvia();"></td>
-    <td><label id="label-alternativa4" class="texto-resposta" for="radio4" onmouseover="desativaAvisoSelecao();">${pergunta.getAlternativa_D()}</label></td>
+    <td><label id="label-alternativa4" class="texto-resposta" for="radio4" onmouseover="desativaAvisoSelecao();">${pergunta.alternativa_D}</label></td>
     </tr>
     </table>
 
     <form id="formResp" method="post" action="${servletChamada}" onmouseover="avisoSelecao();">
     <table id="tabela-botoes">
     <tr>
-    <td><input class="botoes-perguntas" id="bt-envia-resposta" type="button" value="Enviar" disabled onclick="verificaResposta(${pergunta.getResposta()}, ${numeroEscritura});"></td>
+    <td><input class="botoes-perguntas" id="bt-envia-resposta" type="button" value="Enviar" disabled onclick="verificaResposta(${pergunta.resposta}, ${numeroEscritura});"></td>
     <td><input class="botoes-perguntas" id="bt-proxima" type="submit" value="Proxima" disabled onclick="desativaBotaoProxima();"></td>
     </tr>
     </table>
@@ -72,11 +72,11 @@
     <table id="tabela-acoes">
 
     <tr>
-    <td class="acoes-imagens"><img id="img-pulos" src="_imagens/pulo.png" onload="controlaAcao(${acao.getQtdPulo()}, ${acao.getQtdAjuda()}, ${ajuda.isJanelaAjuda()}, ${acao.getQtdSorteio()});">
+    <td class="acoes-imagens"><img id="img-pulos" src="_imagens/pulo.png" onload="controlaAcao(${acao.qtdPulo}, ${acao.qtdAjuda}, ${ajuda.janelaAjuda}, ${acao.qtdSorteio});">
     <label id="label-pulos">3</label></td>
     <td class="acoes-imagens"><img id="img-ajuda" src="_imagens/ajuda.png">
     <label id="label-ajuda">1</label></td>
-    <td class="acoes-imagens"><img  id="acao-sorteio" src="_imagens/dado.png" onload="desativaAlternativaErrada(${sorteio.isAlternativa1()}, ${sorteio.isAlternativa2()}, ${sorteio.isAlternativa3()}, ${sorteio.isAlternativa4()});">
+    <td class="acoes-imagens"><img  id="acao-sorteio" src="_imagens/dado.png" onload="desativaAlternativaErrada(${sorteio.alternativa1}, ${sorteio.alternativa2}, ${sorteio.alternativa3}, ${sorteio.alternativa4});">
     <label id="label-sorteio">1</label></td>
     </tr>
     <tr>
@@ -92,12 +92,12 @@
     <tr>
     <td class="linha-resultado"><img src="_imagens/ajuda1.png"></td>
     <td class="linha-resultado"><img src="_imagens/ajuda2.png"></td>
-    <td class="linha-resultado"><img src="_imagens/ajuda3.png" onload="imagemSorteio(${sorteio.getImagemSorteio()})"></td>
+    <td class="linha-resultado"><img src="_imagens/ajuda3.png" onload="imagemSorteio(${sorteio.imagemSorteio})"></td>
     </tr>
     <tr>
-    <td class="resposta-ajuda" id="linha-ajuda1">${ajuda.getAjuda1()}</td>
-    <td class="resposta-ajuda" id="linha-ajuda2">${ajuda.getAjuda2()}</td>
-    <td class="resposta-ajuda" id="linha-ajuda3">${ajuda.getAjuda3()}</td>
+    <td class="resposta-ajuda" id="linha-ajuda1">${ajuda.ajuda1}</td>
+    <td class="resposta-ajuda" id="linha-ajuda2">${ajuda.ajuda2}</td>
+    <td class="resposta-ajuda" id="linha-ajuda3">${ajuda.ajuda3}</td>
     </tr>
     </table>
 

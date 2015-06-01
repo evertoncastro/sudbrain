@@ -1,6 +1,12 @@
 package br.com.project.sudbrain.model.vo;
 
-public class Pergunta {
+import java.io.Serializable;
+
+public class Pergunta implements Serializable {
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private Integer idPergunta;
 	private Integer nivel;
 	private String pergunta;

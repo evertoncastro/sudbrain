@@ -32,7 +32,7 @@
     <tr class="linha-tabela-usuarioLogado">
     <td><a href="../sudbrain/jogar.jsp">Jogar </a></td>
     <td><label class="labLogin">${usuario.nome}</label></td>
-    <td><a href="../sudbrain/servletLogin.do?acao=sair">  Sair</a></td>
+    <td><a href="../servletLogin.do?acao=sair">  Sair</a></td>
     </tr>
 
     </table>
@@ -59,7 +59,7 @@
     <tr>
     <td colspan="5" id="celula-statusLogin">${statusLogin}</td>
 
-    <td><a href="../sudbrain/novo_jogador.jsp"><img id="botao-novo" src="_imagens/botao_novo.png"></a></td>
+    <td><a href="../novo_jogador.jsp"><img id="botao-novo" src="_imagens/botao_novo.png"></a></td>
     </tr>
     <tr>
     <td colspan="5" id="mensagem-novo-usuario">${mensagem}</td>

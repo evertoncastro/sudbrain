@@ -1,6 +1,12 @@
 package br.com.project.sudbrain.model.vo;
 
-public class Jogada {
+import java.io.Serializable;
+
+public class Jogada implements Serializable{
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	private int id;
 	private int id_usuario;
 	private int pontos;

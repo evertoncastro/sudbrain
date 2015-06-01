@@ -44,10 +44,10 @@ public class ServletInsereUsuario extends HttpServlet {
 			
 			
 			if(statusInsercao==true){
-				mensagem = "Usu�rio cadastrado com sucesso";
+				mensagem = "Usuario cadastrado com sucesso";
 				
 			}else{
-				mensagem = "Erro ao cadastrar usu�rio";
+				mensagem = "Erro ao cadastrar usuario";
 			}
 			request.setAttribute("mensagem", mensagem);
 			RequestDispatcher proximaTela = request.getRequestDispatcher("/index.jsp");

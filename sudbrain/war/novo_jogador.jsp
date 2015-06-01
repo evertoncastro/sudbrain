@@ -107,10 +107,10 @@
 
     <nav id="menu">
     <ul>
-    <li onmouseover="mudaImagem('_imagens/escrituras.png')" onmouseout="mudaImagem('_imagens/novo_jogador.png')"><a href="../sudbrain/index.jsp">Home</a></li>
-    <li onmouseover="mudaImagem('_imagens/sobre.png')" onmouseout="mudaImagem('_imagens/novo_jogador.png')"><a href="../sudbrain/sobre.jsp">Sobre</a></li>
-    <li onmouseover="mudaImagem('_imagens/como-jogar.png')" onmouseout="mudaImagem('_imagens/novo_jogador.png')"><a href="../sudbrain/como-jogar.jsp">Como jogar</a></li>
-    <li onmouseover="mudaImagem('_imagens/ranking.png')" onmouseout="mudaImagem('_imagens/novo_jogador.png')"><a href="../sudbrain/opcoes_ranking.jsp">Ranking</a></li>
+    <li onmouseover="mudaImagem('_imagens/escrituras.png')" onmouseout="mudaImagem('_imagens/novo_jogador.png')"><a href="../index.jsp">Home</a></li>
+    <li onmouseover="mudaImagem('_imagens/sobre.png')" onmouseout="mudaImagem('_imagens/novo_jogador.png')"><a href="../sobre.jsp">Sobre</a></li>
+    <li onmouseover="mudaImagem('_imagens/como-jogar.png')" onmouseout="mudaImagem('_imagens/novo_jogador.png')"><a href="../como-jogar.jsp">Como jogar</a></li>
+    <li onmouseover="mudaImagem('_imagens/ranking.png')" onmouseout="mudaImagem('_imagens/novo_jogador.png')"><a href="../opcoes_ranking.jsp">Ranking</a></li>
     </ul>
     </nav>
 

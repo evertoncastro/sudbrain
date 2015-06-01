@@ -32,9 +32,9 @@
 
     <table id="tabela-usuarioLogado" hidden="hidden">
     <tr class="linha-tabela-usuarioLogado">
-    <td><a href="../sudbrain/jogar.jsp">Jogar </a></td>
-    <td><label class="labLogin">${usuarioNome}</label></td>
-    <td><a href="../sudbrain/servletLogin.do?acao=sair">  Sair</a></td>
+    <td><a href="../jogar.jsp">Jogar </a></td>
+    <td><label class="labLogin">${usuario.nome}</label></td>
+    <td><a href="../servletLogin.do?acao=sair">  Sair</a></td>
     </tr>
     </table>
 
@@ -60,7 +60,7 @@
     <tr>
     <td colspan="5" id="celula-statusLogin">${statusLogin}</td>
 
-    <td><a href="../sudbrain/novo_jogador.jsp"><img id="botao-novo" src="_imagens/botao_novo.png"></a></td>
+    <td><a href="../novo_jogador.jsp"><img id="botao-novo" src="_imagens/botao_novo.png"></a></td>
     </tr>
     <tr>
     <td colspan="5" id="mensagem-novo-usuario">${mensagem}</td>
@@ -72,10 +72,10 @@
 
     <nav id="menu">
     <ul>
-    <li onmouseover="mudaImagem('_imagens/escrituras.png')" onmouseout="mudaImagem('_imagens/ranking.png')"><a href="../sudbrain/index.jsp">Home</a></li>
-    <li onmouseover="mudaImagem('_imagens/sobre.png')" onmouseout="mudaImagem('_imagens/ranking.png')"><a href="../sudbrain/sobre.jsp">Sobre</a></li>
-    <li onmouseover="mudaImagem('_imagens/como-jogar.png')" onmouseout="mudaImagem('_imagens/ranking.png')"><a href="../sudbrain/como-jogar.jsp">Como jogar</a></li>
-    <li onmouseover="mudaImagem('_imagens/ranking.png')" onmouseout="mudaImagem('_imagens/ranking.png')"><a href="../sudbrain/opcoes_ranking.jsp">Ranking</a></li>
+    <li onmouseover="mudaImagem('_imagens/escrituras.png')" onmouseout="mudaImagem('_imagens/ranking.png')"><a href="../index.jsp">Home</a></li>
+    <li onmouseover="mudaImagem('_imagens/sobre.png')" onmouseout="mudaImagem('_imagens/ranking.png')"><a href="../sobre.jsp">Sobre</a></li>
+    <li onmouseover="mudaImagem('_imagens/como-jogar.png')" onmouseout="mudaImagem('_imagens/ranking.png')"><a href="../como-jogar.jsp">Como jogar</a></li>
+    <li onmouseover="mudaImagem('_imagens/ranking.png')" onmouseout="mudaImagem('_imagens/ranking.png')"><a href="../opcoes_ranking.jsp">Ranking</a></li>
     </ul>
     </nav>
 
