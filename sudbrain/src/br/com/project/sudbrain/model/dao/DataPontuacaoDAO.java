@@ -29,6 +29,7 @@ public class DataPontuacaoDAO implements PontuacaoDAO {
 		try{
 			if(con.isClosed()){
 				con = ConnectionFactoryDAO.criaConexao();
+				System.out.println("Conexao para busca de pontuacao aberta");
 			}
 			PreparedStatement ps = con.prepareStatement(SQL_BUSCA_10PRIMEIROS);
 			ps.setInt(1, escritura);
@@ -42,6 +43,7 @@ public class DataPontuacaoDAO implements PontuacaoDAO {
 			}
 			ps.close();
 			con.close();
+			System.out.println("Conexao para busca de pontuacao encerrada");
 		}catch(Exception e){
 			System.out.println(e.getMessage());
 		}			

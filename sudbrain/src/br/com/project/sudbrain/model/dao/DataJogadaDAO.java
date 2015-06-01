@@ -20,12 +20,16 @@ public class DataJogadaDAO implements JogadaDAO {
 		try{
 			if(con.isClosed()){
 				con = ConnectionFactoryDAO.criaConexao();
+				System.out.println("Conexao para registro de jogada aberta");
 			}
 			PreparedStatement ps = con.prepareStatement(sql_insert_jogada);
 			ps.setInt(1, jogada.getId_usuario());
 			ps.setInt(2, jogada.getPontos());
 			ps.setInt(3, jogada.getId_escritura());
 			ps.execute();
+			ps.close();
+			con.close();
+			System.out.println("Conexao para registro de jogada fechada");
 		}catch(Exception e){
 			System.out.println("Erro ao inserir "+e.getMessage());
 		}

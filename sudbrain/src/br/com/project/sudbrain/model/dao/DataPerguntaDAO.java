@@ -35,6 +35,7 @@ public class DataPerguntaDAO implements PerguntaDAO {
 		try{
 			if(con.isClosed()){
 				con = ConnectionFactoryDAO.criaConexao();
+				System.out.println("Conexao para busca de pergunta aberta");
 			}
 			PreparedStatement ps = con.prepareStatement(sql_busca_pergunta);
 			ps.setInt(1, nivel);
@@ -52,7 +53,9 @@ public class DataPerguntaDAO implements PerguntaDAO {
 				perguntaSelecionada.setAlternativa_D(resultado.getString(8));
 				listaDePerguntas.add(perguntaSelecionada);
 			}
-			
+			ps.close();
+			con.close();
+			System.out.println("Conexao para busca de pergunta encerrada");
 		}catch(Exception e){
 			System.out.println("Erro ao selecionar dados".concat(e.getMessage()));
 		}
@@ -65,6 +68,7 @@ public class DataPerguntaDAO implements PerguntaDAO {
 		try{
 			if(con.isClosed()){
 				con = ConnectionFactoryDAO.criaConexao();
+				System.out.println("Conexao para cadastro de pergunta aberta");
 			}
 			PreparedStatement ps = con.prepareStatement(CADASTRA_PERGUNTA);
 			ps.setInt(1, pergunta.getNivel());
@@ -77,6 +81,9 @@ public class DataPerguntaDAO implements PerguntaDAO {
 			ps.execute();
 			status = true;
 			System.out.println("Cadastrado com sucesso");
+			ps.close();
+			con.close();
+			System.out.println("Conexao para cadastro de pergunta encerrada");
 			
 		}catch(Exception e){
 			System.out.println("Falha ao cadatrar pergunta");

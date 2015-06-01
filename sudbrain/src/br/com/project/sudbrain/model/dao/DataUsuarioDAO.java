@@ -26,6 +26,7 @@ public class DataUsuarioDAO implements UsuarioDAO {
 		try{
 			if(con.isClosed()){
 				con = ConnectionFactoryDAO.criaConexao();
+				System.out.println("Conexao para efetuacao de login aberta");
 			}
 			PreparedStatement ps = con.prepareStatement(SQL_SELECT);
 			ps.setString(1, login);
@@ -42,6 +43,7 @@ public class DataUsuarioDAO implements UsuarioDAO {
 			}
 			ps.close();
 			con.close();
+			System.out.println("Conexao para efetuacao de login encerrada");
 		}catch(Exception e){
 			System.out.println(e.getMessage());
 		}
@@ -59,13 +61,16 @@ public class DataUsuarioDAO implements UsuarioDAO {
 		try{
 			if(con.isClosed()){
 				con = ConnectionFactoryDAO.criaConexao();
+				System.out.println("Conexao para cadastro de usuario aberta");
 			}
 			PreparedStatement ps = con.prepareStatement(SQL_INSERT);
 			ps.setString(1, usuario.getNome());
 			ps.setString(2, usuario.getLogin());
 			ps.setString(3, usuario.getSenha());
 			ps.setString(4, usuario.getEmail());			
-			ps.execute();			
+			ps.execute();
+			con.close();
+			System.out.println("Conexao para cadastro de usuario fechada");
 		}catch(Exception e){
 			System.out.println("Erro ao inserir "+e.getMessage());
 		}
@@ -78,11 +83,15 @@ public class DataUsuarioDAO implements UsuarioDAO {
 		try{
 			if(con.isClosed()){
 				con = ConnectionFactoryDAO.criaConexao();
+				System.out.println("Conexao para alteracao de pontos aberta");
 			}
 			PreparedStatement ps = con.prepareStatement(SQL_UPDATE);
 			ps.setInt(1, pontos);
 			ps.setInt(2, id);					
 			ps.execute();
+			ps.close();
+			con.close();
+			System.out.println("Conexao para alteracao de pontos encerrada");
 		}catch(Exception e){
 			System.out.println("Erro ao inserir "+e.getMessage());
 		}
@@ -97,6 +106,7 @@ public class DataUsuarioDAO implements UsuarioDAO {
 		try{
 			if(con.isClosed()){
 				con = ConnectionFactoryDAO.criaConexao();
+				System.out.println("Conexao para busca da melhor pontuacao aberta");
 			}
 			PreparedStatement ps = con.prepareStatement(SQL_SELECT_DEZ_PRIMEIROS);			
 			ResultSet rs = ps.executeQuery();
@@ -109,6 +119,7 @@ public class DataUsuarioDAO implements UsuarioDAO {
 			}
 			ps.close();
 			con.close();
+			System.out.println("Conexao para busca da melhor pontuacao fechada");
 		}catch(Exception e){
 			System.out.println(e.getMessage());
 		}		

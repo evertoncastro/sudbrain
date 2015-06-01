@@ -19,9 +19,9 @@ public class ConnectionFactoryDAO {
 		try{
 			Class.forName(DRIVER).newInstance();
 			con = DriverManager.getConnection(URL, userName, password);
-			System.out.println("Conexão criada com sucesso");
+			System.out.println("Conexao criada com sucesso");
 		}catch(Exception e){
-			System.out.println("Erro ao criar conexão");
+			System.out.println("Erro ao criar conexao");
 			e.printStackTrace();
 		}
 				
